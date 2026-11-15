@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Run python script')
+        stage('Run python script') {
             steps {
-                sh 'Calculator.py'
+                bat 'python your_script.py'
             }
+        }
     }
 }
