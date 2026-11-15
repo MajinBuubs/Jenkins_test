@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run python script') {
             steps {
-                bat 'python your_script.py'
+                python 'Calculator.py'
             }
         }
     }
